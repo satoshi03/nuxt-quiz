@@ -58,6 +58,8 @@
       <v-card min-height="200px" v-if="finished">
         <v-card-title class="justify-center">
           <span class="headline result-message">お疲れ様でした</span>
+        </v-card-title>
+        <v-card-title class="justify-center">
           <span class="headline result-correct-num">{{ getQuestionLength }}問中{{ correctCount }}問正解</span>
         </v-card-title>
         <v-card-actions>
@@ -114,6 +116,10 @@ export default {
       return this.test.questions[this.questionCount].answerOptions[index]
     },
     doAnswer () {
+      if (this.correctAlart || this.wrongAlart) {
+        return
+      }
+
       if (this.checkAnswer()) {
         this.correctCount += 1
         this.correctAlart = true
@@ -122,15 +128,14 @@ export default {
       }
       const _this = this
       setTimeout(function () {
-        _this.correctAlart = false
-        _this.wrongAlart = false
         if (_this.hasNext()) {
           _this.nextQuestion()
         } else {
           _this.finish()
         }
+        _this.correctAlart = false
+        _this.wrongAlart = false
       }, 2000)
-
     },
     hasNext () {
       const questionNum = this.test.questions.length
