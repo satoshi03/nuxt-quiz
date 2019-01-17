@@ -77,7 +77,7 @@ export default {
     return {
       questionCount: 0,
       correctCount: 0,
-      answer: "",
+      answer: 0,
       correctAlart: false,
       wrongAlart: false,
       finished: false,
@@ -137,11 +137,10 @@ export default {
       return this.questionCount < questionNum - 1
     },
     checkAnswer () {
-      console.log(this.answer)
-      console.log(this.test.questions[this.questionCount].answerIndex)
       return this.answer == this.test.questions[this.questionCount].answerIndex
     },
     nextQuestion () {
+      this.answer = 0
       this.questionCount += 1
     },
     finish () {

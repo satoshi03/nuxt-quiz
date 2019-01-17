@@ -71,7 +71,6 @@ export default {
       const _this = this
       ref.orderByChild("name").equalTo(this.testName).once("child_added", function (snapshot) {
         const ss = snapshot.val()
-        console.log(ss)
         if (!ss) {
           _this.dialogErrorMsg = "クイズが見つかりませんでした"
         } else {
