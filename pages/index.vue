@@ -55,7 +55,7 @@ export default {
   data () {
     return {
       dialog: false,
-      testName: "",
+      testName: "雑学クイズ",
       dialogErrorMsg: "",
     }
   },
