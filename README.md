@@ -1,8 +1,10 @@
-# nuxt-ikinari-showtest
+# nuxt-quiz
 
 > Browser based quiz app user can post it via Firebase and NuxtJS.
 
 ![demo](https://media.giphy.com/media/yc5krN8W586pXtyp3R/giphy.gif)
+
+[demo page](https://ikinari-showtest-f6jtrvcdx.now.sh/)
 
 ## Build Setup
 
