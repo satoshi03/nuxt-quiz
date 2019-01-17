@@ -2,6 +2,8 @@
 
 > Browser based quiz app user can post it via Firebase and NuxtJS.
 
+![demo](https://media.giphy.com/media/yc5krN8W586pXtyp3R/giphy.gif)
+
 ## Build Setup
 
 ``` bash
