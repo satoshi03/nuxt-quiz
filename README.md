@@ -4,7 +4,7 @@
 
 ![demo](https://media.giphy.com/media/yc5krN8W586pXtyp3R/giphy.gif)
 
-[demo page](https://ikinari-showtest-f6jtrvcdx.now.sh/)
+[demo page](https://ikinari-showtest-gzgki91ry.now.sh/)
 
 ## Build Setup
 
